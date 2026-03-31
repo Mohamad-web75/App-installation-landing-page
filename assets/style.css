@@ -1,0 +1,198 @@
+:root {
+  --primary-color: #0061ff;
+  --secondary-color: #00d2ff;
+  --dark-bg: #121212;
+  --soft-gray: #f4f7f6;
+}
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("./fonts/IRANYekanXVFaNumVF.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; 
+}
+
+body {
+  font-family: "MyCustomFont", sans-serif;
+  background-color: var(--soft-gray);
+  color: #333;
+}
+.app-icon-lg img {
+  width: 100%;
+  height: 100%;
+}
+.hero {
+  background: linear-gradient(135deg, #1056fd 0%, #af1dbf 100%);
+  color: white;
+  padding: 100px 0 100px;
+  border-radius: 0 0 50px 50px;
+  position: relative;
+}
+
+.app-header-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 30px;
+  padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.app-icon-lg {
+  width: 150px;
+  min-width: 150px;
+  height: 150px;
+  border-radius: 28px;
+  background: white;
+  padding: 15px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.stat-badge {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 8px 15px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  margin-left: 10px;
+}
+
+.specs-container {
+  margin-top: -80px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+}
+
+.spec-item {
+  border-bottom: 1px solid #eee;
+  padding: 12px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.spec-item:last-child {
+  border: none;
+}
+
+.label {
+  color: #888;
+  font-weight: 500;
+}
+.value {
+  color: #222;
+  font-weight: bold;
+}
+
+.feature-box {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  height: 100%;
+  transition: 0.4s;
+  border: 1px solid #eee;
+}
+.feature-box p {
+  text-align: justify;
+  line-height: 30px;
+}
+.feature-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  border-color: var(--primary-color);
+}
+
+.feature-icon {
+  width: 60px;
+  height: 60px;
+  background: var(--soft-gray);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.dl-section {
+  background: #fff;
+  padding: 45px 0;
+  border-radius: 40px;
+  margin: 40px 0 65px;
+}
+
+.btn-download {
+  border-radius: 15px;
+  padding: 15px 30px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+
+.btn-googleplay {
+  background: #000;
+  color: white;
+  border: none;
+}
+.btn-direct {
+  background: #01875f;
+  color: white;
+  border: none;
+}
+
+.screenshot-img {
+  border-radius: 20px;
+  width: 100%;
+  border: 5px solid #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background: #1a1a1a;
+  color: #aaa;
+  padding: 40px 0;
+}
+.app-header-card h1 {
+  font-size: 30px;
+}
+h2,
+h3,
+h4 {
+  font-size: 24px;
+}
+@media (max-width: 768px) {
+  .hero {
+    padding: 40px 0 15px;
+    border-radius: 0 0 40px 40px;
+  }
+  .app-header-card h1 {
+    font-size: 22px;
+  }
+  .app-icon-lg {
+    width: 140px;
+    min-width: 140px;
+    height: 140px;
+  }
+  .spec-item {
+    font-size: 14px;
+  }
+  .dl-section {
+    padding: 40px 0;
+    border-radius: 35px;
+    margin: 25px 0 45px;
+  }
+  h2,
+  h3,
+  h4 {
+    font-size: 18px;
+  }
+  .btn-download {
+    font-size: 15px;
+  }
+  .feature-box h5 {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .feature-box p {
+    font-size: 15px;
+  }
+}
